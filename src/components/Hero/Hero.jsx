@@ -44,7 +44,7 @@ function Hero() {
           ))}
         </div>
 
-        <div className="container">
+        <div className="hero-container">
           <div className="hero-content">
             <h1>
               Suas soluções<br />
@@ -52,7 +52,7 @@ function Hero() {
               <span>rua de cima!</span>
             </h1>
 
-            <form aria-label="Cadastro prestador de serviços">
+            <form className='formulario-hero' aria-label="Cadastro prestador de serviços">
               <h2>
                 Cadastre-se como
                 prestador de serviços
