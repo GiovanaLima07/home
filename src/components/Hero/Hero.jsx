@@ -28,7 +28,7 @@ function Hero() {
           <input type="text" placeholder="Serviço" />
           <input type="text" placeholder="CEP" />
           <button aria-label="Pesquisar">
-            <i className="material-icons">search</i>
+            
           </button>
         </div>
 
