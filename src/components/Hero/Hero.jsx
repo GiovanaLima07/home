@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'; // Importe os hooks corretamente
 import './Hero.css';
 
- const backgrounds = ['#ff6a00', '#1a1464', '#00b894']; 
+const backgrounds = ['#ff6a00', '#1a1464', '#00b894'];
 
 function Hero() {
   const [slideIndex, setSlideIndex] = useState(0); // Estado dentro do componente
@@ -28,7 +28,9 @@ function Hero() {
           <input type="text" placeholder="Serviço" />
           <input type="text" placeholder="CEP" />
           <button aria-label="Pesquisar">
-            
+            <span class="material-symbols-outlined">
+              search
+            </span>
           </button>
         </div>
 

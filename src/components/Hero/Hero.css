@@ -21,11 +21,11 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 20;
-  width: 90%;
+  width: 80%;
   max-width: 100%;
   display: flex;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: green;
   border-radius: 9999px;
   padding: 0.5rem 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -34,22 +34,22 @@
 
 #pesquisa input {
   flex: 1;
-  background: transparent;
+  background: white;
+  width: 100%;
   color: #4b5563;
-  font-size: 0.875rem;
-  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  padding: ;
   border: none;
   outline: none;
 }
 
-#pesquisa input:nth-child(2) {
-  border-left: 1px solid #d1d5db;
-}
 
 #pesquisa button {
   background: none;
   border: none;
   cursor: pointer;
+  width: 8%;
+  
 }
 
 /* Botões de controle do carrossel */
@@ -170,8 +170,6 @@
 
 /* Responsivo para telas menores */
 @media (min-width: 768px) { 
-
-
 
   #pesquisa input {
     font-size: 1rem;
