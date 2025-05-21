@@ -1,24 +1,25 @@
-import { useState, useEffect } from 'react'; // Importe os hooks corretamente
+import { useState, useEffect } from 'react'; // 
 import './Hero.css';
 
-const backgrounds = ['#ff6a00', '#1a1464', '#00b894'];
+
+const backgrounds = ["url('/imgHero/fundoCarrossel.svg')", "url('/imgHero/fundoCarrossel2.svg')", "url('/imgHero/fundoCarrossel3.svg')"];
 
 function Hero() {
-  const [slideIndex, setSlideIndex] = useState(0); // Estado dentro do componente
+  const [slideIndex, setSlideIndex] = useState(0); 
 
-  // Troca de cor a cada 3 segundos
   useEffect(() => {
     const interval = setInterval(() => {
       setSlideIndex((prev) => (prev + 1) % backgrounds.length);
     }, 3000);
 
-    // Limpa o intervalo quando o componente for desmontado
     return () => clearInterval(interval);
   }, []);
 
-  // Define o estilo de fundo dinâmico
   const backgroundStyle = {
-    backgroundColor: backgrounds[slideIndex],
+    backgroundImage: backgrounds[slideIndex],
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
   };
 
   return (
