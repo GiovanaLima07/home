@@ -1,0 +1,145 @@
+#carrossel {
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+}
+
+#textos-carrossel {
+    width: 40%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: #DADADA;
+    padding: 2% 4%;
+    border-radius: 15px 0 0 15px ;
+    font-family: sans-serif;
+}
+
+#textos-carrossel h2 {
+    font-size: 4rem;
+    color: #FF7900;
+}
+
+#textos-carrossel p {
+    font-size: 2rem;
+    color: #273E59;
+    
+}
+
+#textos-carrossel button {
+    width: 65%;
+    height: 10%;
+    background-color: #D97706; 
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+#img-carrossel {
+    width: 60%;
+    height: 75%;
+    padding: 2%;
+    background-color: #DADADA;
+    position: relative;
+    z-index: 0;
+    border-radius: 0 15px 15px 0 ;
+}
+
+.image-carrossel {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+}
+
+
+.navegacao {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 1rem 1.25rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navegacao .material-symbols-outlined {
+    color: white;
+    background-color: #fd7708;
+    font-size: 2.25rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.barra-progresso {
+    height: 2rem;
+    display: flex;
+    border-radius: 10px;
+    width: 95%;
+    background-color: #ffff; 
+    margin: 0 1rem;
+    position: relative;
+}
+
+.progresso {
+    height: 100%;
+    width: 20%;
+    border-radius: 10px;
+    border-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.progresso.ativo {
+    border: none;
+}
+
+
+@media (max-width: 1090px){
+    #textos-carrossel h2{
+        font-size: 3rem;
+    }
+
+    #textos-carrossel p{
+        font-size: 1.5em;
+    }
+
+}
+
+@media(max-width: 768px){
+
+    #carrossel{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #textos-carrossel{
+        border-radius: 15px 15px 0 0;
+        width: 65%;
+    }
+
+    #textos-carrossel h2{
+        font-size: 2rem;
+    }
+
+    #textos-carrossel p{
+        font-size: 1.5em;
+    }
+
+    #textos-carrossel button{
+        height: 50px;
+    }
+
+    #img-carrossel{
+        width: 65%;
+        padding: 4%;
+        border-radius: 0 0 15px 15px;
+    }
+}
