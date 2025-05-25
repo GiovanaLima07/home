@@ -1,0 +1,104 @@
+.cardAvaliacaoContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2%;
+    overflow: hidden;
+}
+
+.carrossel-cards {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carrossel {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carrossel::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    width: 28%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2% ;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    gap: 5%;
+    border-style: solid;
+    border-color: #304FE5;
+    background-color: white;
+}
+
+.perfil-card {
+    width: 150px;
+    height: 150px;
+    border-radius: 999px;
+    object-fit: cover;
+    border-style:  solid;
+    border-color: #FF7900;
+}
+.texto-card{
+    display: flex;
+    gap: 10%;
+    align-text:center;
+}
+
+.texto-card p {
+    background-color: #FF7900;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    width: auto;
+}
+
+.card-descricao p {
+    color: #273E59;
+    font-size: 1.5rem ;
+    text-align: center;
+    width: 70%;
+    background-color: white; 
+    margin: 0 auto;
+}
+
+.seta {
+    cursor: pointer;
+    font-size: 2rem;
+    user-select: none;
+    color: #FF7900;
+    transition: transform 0.2s;
+}
+
+.seta:hover {
+    color: #304FE5;
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .card {
+        width: 44%;
+    }
+}
+
+@media (max-width: 767px) {
+    .card {
+        width: 94%; 
+    }
+}
+
+
